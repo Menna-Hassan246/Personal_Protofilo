@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menna Hassan - Backend Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="circular-nav" id="navbar">
+        <div class="nav-container">
+            <div class="logo-circle">MH</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link"><div class="nav-circle"><i class="fas fa-home"></i></div><span>Home</span></a></li>
+                <li><a href="#about" class="nav-link"><div class="nav-circle"><i class="fas fa-user"></i></div><span>About</span></a></li>
+                <li><a href="#education" class="nav-link"><div class="nav-circle"><i class="fas fa-graduation-cap"></i></div><span>Education</span></a></li>
+                <li><a href="#experience" class="nav-link"><div class="nav-circle"><i class="fas fa-briefcase"></i></div><span>Experience</span></a></li>
+                <li><a href="#projects" class="nav-link"><div class="nav-circle"><i class="fas fa-code"></i></div><span>Projects</span></a></li>
+                <li><a href="#skills" class="nav-link"><div class="nav-circle"><i class="fas fa-cogs"></i></div><span>Skills</span></a></li>
+                <li><a href="#contact" class="nav-link"><div class="nav-circle"><i class="fas fa-envelope"></i></div><span>Contact</span></a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="greeting-circle">Hello, I'm</div>
+                <h1 class="hero-title">
+                    Menna <span class="highlight-circle">Hassan</span>
+                </h1>
+                <h2 class="hero-subtitle">Backend Developer</h2>
+                <p class="hero-description">
+                    Passionate about building robust, scalable backend systems and APIs. 
+                    I specialize in creating efficient server-side solutions that power modern applications.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-circle btn-primary">
+                        View My Work
+                        <div class="btn-ripple"></div>
+                    </a>
+                    <a href="#contact" class="btn-circle btn-secondary">
+                        Get In Touch
+                        <div class="btn-ripple"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-orbit">
+                    <div class="profile-glow"></div>
+                    <div class="profile-ring"></div>
+                    <div class="profile-circle">
+                        <img src="images/MY.jpg" alt="Menna Hassan">
+                    </div>
+                    <!-- <div class="floating-icons">
+                        <div class="icon-circle icon-1"><i class="fab fa-python"></i></div>
+                        <div class="icon-circle icon-2"><i class="fab fa-node-js"></i></div>
+                        <div class="icon-circle icon-3"><i class="fas fa-database"></i></div>
+                        <div class="icon-circle icon-4"><i class="fab fa-docker"></i></div> 
+                        <div class="icon-circle icon-5"><i class="fas fa-javascript"></i></div>
+                        <div class="icon-circle icon-6"><i class="fas fa-css"></i></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title-circle gradient-text">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-bubble">
+                        <h3>My Journey in Backend Development</h3>
+                        <p>
+                            My passion for backend development began during my computer science studies, where I discovered 
+                            the fascinating world of server-side architecture. I'm driven by the challenge of creating 
+                            systems that can handle millions of requests while maintaining performance and reliability.
+                        </p>
+                        <p>
+                            What excites me most about backend development is the problem-solving aspect - designing 
+                            efficient algorithms, optimizing database queries, and architecting scalable solutions. 
+                            I believe that great backend systems are the invisible foundation that makes exceptional 
+                            user experiences possible.
+                        </p>
+                        <p>
+                            When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
+                            projects, or mentoring fellow developers. I'm always eager to learn and share knowledge 
+                            with the developer community.
+                        </p>
+                    </div>
+                </div>
+                <div class="stats-circles">
+                    <div class="stat-circle-small">
+                        <div class="stat-inner-small">
+                            <svg class="stat-progress-small">
+                                <defs>
+                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#2563eb"/>
+                                        <stop offset="100%" style="stop-color:#0ea5e9"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle class="stat-bg" cx="40" cy="40" r="35"></circle>
+                                <circle class="stat-fill" cx="40" cy="40" r="35" style="stroke-dashoffset: 50;"></circle>
+                            </svg>
+                            <div class="stat-number-small">3+</div>
+                        </div>
+                        <div class="stat-label-outside">Years Experience</div>
+                    </div>
+                    <div class="stat-circle-small">
+                        <div class="stat-inner-small">
+                            <svg class="stat-progress-small">
+                                <circle class="stat-bg" cx="40" cy="40" r="35"></circle>
+                                <circle class="stat-fill" cx="40" cy="40" r="35" style="stroke-dashoffset: 75;"></circle>
+                            </svg>
+                            <div class="stat-number-small">4+</div>
+                        </div>
+                        <div class="stat-label-outside">Projects Completed</div>
+                    </div>
+                    <div class="stat-circle-small">
+                        <div class="stat-inner-small">
+                            <svg class="stat-progress-small">
+                                <circle class="stat-bg" cx="40" cy="40" r="35"></circle>
+                                <circle class="stat-fill" cx="40" cy="40" r="35" style="stroke-dashoffset: 25;"></circle>
+                            </svg>
+                            <div class="stat-number-small">8+</div>
+                        </div>
+                        <div class="stat-label-outside">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title-circle gradient-text">Academic Journey</h2>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-circle">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <div class="education-header">
+                                <h3>Bachelor of Computer Science</h3>
+                                <span class="education-date">2022- 2026</span>
+                            </div>
+                            <h4>Benha University</h4>
+                            <p>Specialized in Software Engineering and Database Systems.focusing on backend development, algorithms, and system design.</p>
+                            <h4>GPA: 3.8</h4>
+                            <div class="education-achievements">
+                             <span class="achievement-tag">Software Engineering Focus</span>
+                             <span class="achievement-tag">problem-solving</span>
+                                <span class="achievement-tag">Database Systems</span>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-circle">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                  <div class="education-card">
+    <div class="education-header">
+        <h3>.NET Full Stack Web Development</h3>
+        <span class="education-date">2024</span>
+    </div>
+    <h4>Information Technology Institute (ITI)</h4>
+    <p>Focused on .NET Core, MVC, C#, REST APIs, SQL Server, and backend services.</p>
+    <div class="education-achievements">
+        <span class="achievement-tag">.NET Core</span>
+        <span class="achievement-tag">C#</span>
+        <span class="achievement-tag">REST APIs</span>
+        <span class="achievement-tag">SQL Server</span>
+        <span class="achievement-tag">MVC</span>
+    </div>
+</div>
+
+<div class="education-card">
+    <div class="education-header">
+        <h3>Front-End Web Development</h3>
+        <span class="education-date">2024</span>
+    </div>
+    <h4>Mahara Tech - Ministry of Communications</h4>
+    <p>Covered HTML, CSS, JavaScript, and responsive design.</p>
+    <div class="education-achievements">
+        <span class="achievement-tag">HTML</span>
+        <span class="achievement-tag">CSS</span>
+        <span class="achievement-tag">JavaScript</span>
+        <span class="achievement-tag">Responsive Design</span>
+    </div>
+</div>
+
+<div class="education-card">
+    <div class="education-header">
+        <h3>ECPC Participation Certificate</h3>
+        <span class="education-date">2023</span>
+    </div>
+    <h4>Egyptian Collegiate Programming Contest (ECPC)</h4>
+    <p>Participated in a national-level competitive programming contest focused on problem-solving and algorithms.</p>
+    <div class="education-achievements">
+        <span class="achievement-tag">Problem Solving</span>
+        <span class="achievement-tag">Algorithms</span>
+        <span class="achievement-tag">Competitive Programming</span>
+    </div>
+</div>
+    </section>
+<section id="experience" class="experience">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="title-circle gradient-text">Internships</h2>
+        </div>
+        <div class="experience-grid">
+
+            <!-- DEPI Internship -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-circle">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="experience-info">
+                        <h3>.NET Full Stack Intern</h3>
+                        <h4>Digital Egypt Pioneers Initiative (DEPI) - Benha, Alqalyubiyah, Egypt</h4>
+                        <span class="experience-date">June 2025 - Present</span>
+                    </div>
+                </div>
+                <p>Training as a .NET Full Stack Developer, focusing on backend and frontend development skills to build scalable web applications.</p>
+                <ul class="achievement-list">
+                    <li>Developed and deployed full stack applications using .NET technologies</li>
+                    <li>Worked with relational databases and implemented CRUD operations</li>
+                    <li>Participated in team projects following Agile methodology</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">.NET</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">SQL Server</span>
+                    <span class="tech-tag">ASP.NET MVC</span>
+                </div>
+            </div>
+
+            <!-- ITI .NET Internship -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-circle">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="experience-info">
+                        <h3>.NET Full Stack Intern</h3>
+                        <h4>Information Technology Institute (ITI) - Benha, Alqalyubiyah, Egypt</h4>
+                        <span class="experience-date">Sep 2024 - Oct 2024</span>
+                    </div>
+                </div>
+                <p>Hands-on training in .NET Full Stack development, covering backend, frontend, and database integration.</p>
+                <ul class="achievement-list">
+                    <li>Built web applications using ASP.NET MVC</li>
+                    <li>Designed database schemas and wrote SQL queries</li>
+                    <li>Applied best practices in object-oriented programming</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">.NET</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">SQL Server</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+            </div>
+
+            <!-- ITI MERN Internship -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-circle">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="experience-info">
+                        <h3>MERN Stack Intern</h3>
+                        <h4>Information Technology Institute (ITI) - Al Minya, Egypt</h4>
+                        <span class="experience-date">Aug 2025 - Present</span>
+                    </div>
+                </div>
+                <p>Worked on backend APIs and collaborated with frontend developers in an Agile environment.</p>
+                <ul class="achievement-list">
+                    <li>Developed backend APIs using Node.js and Express.js</li>
+                    <li>Connected APIs with MongoDB for CRUD operations</li>
+                    <li>Collaborated with frontend developers for API integration</li>
+                    <li>Participated in Agile stand-ups and weekly sprints</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- IEEE Technical Team -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-circle">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="experience-info">
+                        <h3>Frontend Technical Team Member</h3>
+                        <h4>IEEE Menoufia University Student Branch</h4>
+                        <span class="experience-date">2023 - 2024</span>
+                    </div>
+                </div>
+                <p>Contributed to frontend development tasks as part of IEEE Menoufia technical team.</p>
+                <ul class="achievement-list">
+                    <li>Worked on building responsive UI components</li>
+                    <li>Collaborated with peers in student-led projects</li>
+                    <li>Enhanced skills in HTML, CSS, and JavaScript</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title-circle gradient-text">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/ecommerce-project.jpg" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Menna-Hassan246/ITI_ECOMMERCE_SYSTEM" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Menna-Hassan246/ITI_ECOMMERCE_SYSTEM" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured e-commerce backend with user authentication, product management, order processing, and payment integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">.NET Core MVC</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Bootstraps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/library-project.jpg" alt="Library Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Menna-Hassan246/Book_Loan_System" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Menna-Hassan246/Book_Loan_System" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Library Management System</h3>
+                        <p>Digital library system with book cataloging, user management, borrowing system, and automated notifications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQLites</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/game-management.jpg" alt="Game Management Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Menna-Hassan246/Game_Library" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Menna-Hassan246/Game_Library" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Game Management Platform</h3>
+                        <p>Gaming platform backend with user profiles, game library management, achievements system, and social features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MariaDB</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title-circle gradient-text">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-circle">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5&CSS3</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Bootstrap</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                         <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Responsive Design</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-circle">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C#</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">.NET</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">API</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Laravel</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-circle">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQLite</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-circle">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Tools & Collaboration</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Troubleshooting</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Clean Code</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Debugging</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title-circle gradient-text">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info-centered">
+                    <div class="contact-item">
+                        <div class="contact-circle">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>memomahmoud626@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-circle">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn </h4>
+                            <p><a href="https://www.linkedin.com/in/menna-hassan-320643265">linkedin.com/in/menna-hassan</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-circle">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub </h4>
+                            <p><a href="https://github.com/Menna-Hassan246">github.com/menna-hassan</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-circle">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+20 1028248285</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-circle">
+                <p>&copy; 2025 Menna Hassan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
